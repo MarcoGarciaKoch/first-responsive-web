@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+main {
+    min-height: 100vh;
+}
+
+                                /*INITIAL HEADER*/
+
+.header__container {
+    top: 0;
+    left: 0;
+    padding: 10px;
+    margin-bottom: 2px;
+    border-bottom: 1.5px solid #f0915d;
+}
+
+.header__logo {
+    max-width: 5rem;
+    min-width: 4rem;
+}
+
+
+                                /* HEADER MENU DISPLAY */
+
+.nav {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    z-index: 100;
+    visibility: hidden;
+    position: absolute;
+    width: 100vw;
+    border-bottom: 5px solid #e7dede;
+    background-color: #ffffff;
+}
+
+    /* STYLE AND FUNCTION BURGUER BUTTON */
+
+.menu-display__label {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-solid {
+    position: absolute;
+    font-size: 1.5rem;
+
+}
+
+.fa-solid:active {
+    transform: scale(0.9);
+}
+
+.nav__open__close:focus-within {
+    animation: NavDisplay 0.4s 1 linear;
+    transform-origin: top;
+    visibility: visible;
+}
+
+    /* STYLE AND FUNCTION NAV MENU */
+
+.menu-display__checkbox {
+    visibility: visible;
+    width: 1px;
+    height: 1px;
+}
+
+.nav__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 13px;
+    margin-bottom: 30px;
+}
+
+.nav__link {
+    font-size: 1.2rem;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.nav__link:hover {
+    color: #ffffff;
+    background-color: #1b1c20;
+    padding: 10px 5px 10px 5px;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
+.nav__social-media-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 13px;
+    gap: 10px;
+}
+
+#nav__social-media-icon {
+    height: 1.5rem;
+}
+
+#nav__social-media-icon:hover{
+    transform: scale(1.25);
+    transition: 0.25s ease-in;
+    cursor: pointer;
+
+}
+
+#nav__social-media-icon:active{
+    transform: scale(0.96);
+    box-shadow: 1px 1px 2px #333333;
+}
+
+     /* ANIMATION HEADER & NAV MENU */
+
+@keyframes NavDisplay {
+    0% {
+        transform: scaleY(0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: scaleY(0.25);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scaleY(0.5);
+        opacity: 1;
+    }
+
+    75% {
+        transform: scaleY(0.75);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+                                /* FOOTER */
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #1b1c20;
+    color: #ffffff;
+    padding: 20px 0px;
+}
+                                
+footer > p {
+    font-size: 0.7rem;
+}
+
+
+                                /* MEDIA QUERIES - RESPONSIVE */
+
+@media screen and (min-width: 360px) {
+    
+    .menu-display__label {
+       visibility: visible;
+       top: -55px;
+    }
+}
+
+@media screen and (min-width: 913px) {
+
+    .header__container {
+        position: absolute;
+        z-index: 1000;
+        width: 40vw;
+        height: 98.5px;
+        border: none;
+    }
+
+    .header__logo {
+        max-width: 7rem;
+        min-width: 6rem;
+    }
+
+    .nav {
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #f0915d;
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 3px;
+    }
+
+    .menu-display__label {
+        visibility: hidden;
+    }
+
+    .nav__menu {
+        flex-direction: row;
+        gap: 50px;
+        margin-left: 180px;
+        margin-bottom: 0px;
+    }
+
+    .nav__social-media-container {
+        right: 0;
+        gap: 10px;
+        margin-right: 40px;
+    }
+
+    .nav__link:hover {
+        color: #ffffff;
+        background-color: #1b1c20;
+        padding: 25px 10px 25px 10px;
+    }
+
+    #nav__social-media-icon {
+        height: 2rem;
+    }
+}

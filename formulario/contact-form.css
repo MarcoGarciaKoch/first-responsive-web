@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald';
+}
+
+.form__general-container {
+    background-image: url(../fotos-video/photo-background.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.form__first-container, .form__second-container, .form__third-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    gap: 0.8rem;
+}
+
+.form-title {
+    font-size: 1.5rem;
+}
+
+.form-subtitle {
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+                                /*STYLE FIRST FORM CONTAINER*/
+
+.form-personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.form-personal-info > input, select {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.form-personal-info > input::placeholder {
+    font-size: 0.7rem;
+    padding-left: 5px;
+}
+
+.form-personal-info > select option {
+    background-color: #828284;
+}
+
+#ROLE {
+    padding-left: 5px;
+    width: 100%;
+}
+
+.form-recomendations__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-recomendations__container > h2 {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    font-weight: 200;
+}
+
+.form-recomendations__container > section {
+    display: flex;
+    gap: 10px;
+    font-size: 0.8rem;
+}
+
+.form-recomendations__container > section > input {
+    color:rgba(83, 84, 86, 0.6)
+}
+
+input[type="radio"] {
+   accent-color:  #999999;
+  }
+
+                                 /*STYLE SECOND FORM CONTAINER*/
+
+.form__second-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-other-recommendations__title {
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.form-other-recommendations__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 0.8rem;
+}
+
+.form-contact-date-suggestions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 10px;
+}
+
+.form-contact-date-suggestions > input {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 250px;
+    height: 90px;
+    border-radius: 5px;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-size: 0.7rem;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+                                  /*STYLE THIRD FORM CONTAINER*/
+
+.form__third-container > button {
+    width: 250px;
+    padding: 8px 0px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    background-color: rgb(59, 125, 232);
+    color: #ffffff;
+}
+
+                                /*MEDIA QUERIES - RESPONSIVE*/
+
+@media screen and (max-width:481px) {
+    .form-title {
+        font-size: 2.5rem;
+    }
+    
+    .form-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .form-personal-info {
+        gap: 0.6rem;
+        font-size: 1rem;
+    }
+    
+    .form-personal-info > input, select  {
+        width: 95%;
+        height: 35px;
+    }
+    
+    .form-personal-info > input::placeholder {
+        font-size: 0.9rem;
+    }
+    
+    .form-recomendations__container > h2 {
+        font-size: 0.9rem;
+    }
+    
+    .form-recomendations__container > section {
+        font-size: 0.9rem;
+    } 
+
+    .form-other-recommendations__title {
+        font-size: 0.8rem;
+    }
+    
+    .form-other-recommendations__container {
+        font-size: 0.8rem;
+    }
+    
+    .form-contact-date-suggestions {
+        font-size: 0.9rem;
+    }
+
+    .form-contact-date-suggestions > input {
+        width: 95%;
+        height: 35px;
+    }
+    
+    textarea {
+        width: 95%;
+    }
+    
+    textarea::placeholder {
+        font-size: 0.8rem;
+    }
+    
+    .form__third-container > button {
+        width: 220px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width: 482px) {
+    .form-personal-info > input, .select-role__container {
+        width: 400px;
+    }
+
+    .form-contact-date-suggestions > input {
+        width: 400px;
+    }
+    
+    textarea {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .form-title {
+        font-size: 3rem;
+    }
+
+    .form-personal-info {
+        gap: 0.7rem;
+        font-size: 1.1rem;
+    }
+    
+    .form-personal-info > input, select {
+        width: 480px;
+    }
+    
+    .form-recomendations__container > section {
+        font-size: 1rem;
+    } 
+
+    .form__second-container > h2 {
+        font-size: 0.9rem;
+    }
+    
+    .form-other-recommendations__container {
+        font-size: 0.9rem;
+    }
+    
+    .form-contact-date-suggestions {
+        font-size: 1rem;
+    }
+    
+    .form-contact-date-suggestions > input {
+        width: 480px;
+    }
+    
+    textarea {
+        width: 480px;
+    }
+    
+    textarea::placeholder {
+        font-size: 1rem;
+    }
+    
+    .form__third-container > button {
+        width: 480px;
+        font-size: 0.9rem;
+    }
+}

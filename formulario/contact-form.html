@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact-form.css">
+    <link rel="stylesheet" href="../header-footer/header-footer.css">
+    <script src="https://kit.fontawesome.com/0eed22b9b8.js" crossorigin="anonymous"></script>
+    <title>Contact Form</title>
+</head>
+<body>
+    <header>
+        <section class="header__container">
+            <img class="header__logo" src="../header-footer/html5css3.svg" alt="header-logo">
+        </section>
+        <nav class="nav nav__open__close">
+            <label class="menu-display__label" for="MENU">
+                <i class="fa-solid fa-bars"></i>
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+            </label>
+            <input id="MENU" class="menu-display__checkbox" type="checkbox">
+            <section class="nav__menu">
+                <div>
+                    <a class="nav__link" href="../index.html">Home</a>
+                </div>
+                <div>
+                    <a class="nav__link" href="../chess-board/chess-board.html">Board</a>
+                </div>
+                <div>
+                    <a class="nav__link" href="./contact-form.html">Contact</a>
+                </div>
+            </section>
+            <section class="nav__social-media-container">
+                <img id="nav__social-media-icon" src="../header-footer/facebook.png" alt="facebook">
+                <img id="nav__social-media-icon" src="../header-footer/twitter.png" alt="twitter">
+                <img id="nav__social-media-icon" src="../header-footer/youtube.png" alt="youtube">
+                <img id="nav__social-media-icon" src="../header-footer/instagram.png" alt="instagram">
+            </section>
+        </nav>
+    </header>
+    <form action="https://wwww.google.com" method="get">
+        <section class="form__general-container">
+            <section class="form__first-container">
+                <h1 class="form-title">Contact Form</h1>
+                <h2 class="form-subtitle"> Thank you for taking your time to contact and help us to get better</h2>
+                <section class="form-personal-info">
+                    <label for="NAME">Name</label>
+                    <input type="text" id="NAME" name="name" required placeholder="Write your name">
+                    <label for="EMAIL">Email</label>
+                    <input type="email" id="EMAIL" name="email" required placeholder="Write your email">
+                    <label for="AGE">Age</label>
+                    <input type="number" id="AGE" name="age" required min="18" placeholder="Write your age, you must be +18">
+                    <label for="ROLE">¿What is the role that best describes your current situation?</label>
+                    <select class="select-role__container" name="" id="ROLE" required>
+                        <option value="default">Choose your current role</option>
+                        <option value="study">Student</option>
+                        <option value="work">Full Time Employee</option>
+                        <option value="freelance">Freelance</option>
+                        <option value="unemployed">Unemployed</option>
+                    </select>
+                </section>
+                <section class="form-recomendations__container">
+                    <h2>¿Would you recommend this website?</h2>
+                    <section class="form-radio__recomendations">
+                        <label for="YES">Absolutely yes</label>
+                        <input type="radio" id="YES" name="recommendation" checked>
+                        <label for="MAYBE">Maybe</label>
+                        <input type="radio" id="MAYBE" name="recommendation">
+                        <label for="NO">Not sure at the moment</label>
+                        <input type="radio" id="NO" name="recommendation">
+                    </section>
+                </section>
+            </section>
+            <section class="form__second-container">
+                <h2 class="form-other-recommendations__title">¿What recommendations would you like to receive? (Check all suitable options)</h2>
+                <section class="form-other-recommendations__container">
+                    <div>
+                        <input type="checkbox" id="FRONT">
+                        <label for="FRONT">Front-end projects</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="BACK">
+                        <label for="BACK">Back-end projects</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="MEDIA">
+                        <label for="MEDIA">Social Media (Marketing)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="GAMES">
+                        <label for="GAMES">Videogame development</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="UXUI">
+                        <label for="UXUI">UX/UI tutorials</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="OTHERS">
+                        <label for="OTHERS">Others</label>
+                    </div>
+                </section>
+                <section class="form-contact-date-suggestions">
+                    <label for="DATE">¿What time would you like to be contacted by us?</label>
+                    <input type="datetime-local" id="DATE" required min="2022-01-02T00:00">
+                    <label for="SUGGESTIONS">¿Any comments or suggestions?</label>
+                    <textarea name="suggestions" id="SUGGESTIONS" cols="30" rows="10" placeholder="Leave your comments..."></textarea>    
+                </section>
+            </section>
+            <section class="form__third-container">
+                <button class="form-send-button" >SEND</button>
+            </section>
+        </section>
+    </form>
+    <footer>
+        <p>Copyright @ Marco García Koch 2022</p>
+    </footer>
+</body>
+</html>
