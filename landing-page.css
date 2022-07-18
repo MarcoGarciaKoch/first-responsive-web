@@ -307,6 +307,7 @@ opacity: 0;
 }
 
 .blue__circle {
+    position: absolute;
     display: flex;
     flex-direction: column;
     width: 3rem;
@@ -318,8 +319,7 @@ opacity: 0;
     align-items: center;
     font-size: 0.4rem;
     align-self: flex-end;
-    margin-right: 30px;
-    margin-top: 20px;
+    margin-right: 20px;
 }
 
 .pricing__plan-bronze-gold-platinum:hover > .blue__circle {
@@ -382,8 +382,12 @@ opacity: 0;
 
     .blue__circle {
         align-self: flex-start;
-        margin-left: 40px;
-        margin-top: 50px;
+        margin-left: 10px;
+    }
+
+    .pricing__plan-bronze-gold-platinum:hover, .pricing__plan-bronze-gold-platinum:hover > .blue__circle {
+        transform: none;
+        transition: none;
     }
 
 }
@@ -431,8 +435,12 @@ opacity: 0;
     }
 
     .blue__circle {
-        position: absolute;
-        top: -50px;
+        align-self: flex-start;
+    }
+
+    .pricing__plan-bronze-gold-platinum:hover, .pricing__plan-bronze-gold-platinum:hover > .blue__circle {
+        transform: none;
+        transition: none;
     }
 
     hr {
