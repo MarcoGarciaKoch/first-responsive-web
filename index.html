@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./landing-page.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./header-footer/header-footer.css">
+    <script src="https://kit.fontawesome.com/0eed22b9b8.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./fotos-video/favicon.ico">
+    <title>First Web HTML & CSS Only</title>
+</head>
+<body>
+    <header>
+        <section class="header__container">
+            <img class="header__logo" src="./header-footer/html5css3.svg" alt="header-logo">
+        </section>
+        <nav class="nav nav__open__close">
+            <label class="menu-display__label" for="MENU">
+                <i class="fa-solid fa-bars"></i>
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+            </label>
+            <input id="MENU" class="menu-display__checkbox" type="checkbox">
+            <section class="nav__menu">
+                <div>
+                    <a class="nav__link" href="./index.html">Home</a>
+                </div>
+                <div>
+                    <a class="nav__link" href="./chess-board/chess-board.html">Board</a>
+                </div>
+                <div>
+                    <a class="nav__link" href="./formulario/contact-form.html">Contact</a>
+                </div>
+            </section>
+            <section class="nav__social-media-container">
+                <img id="nav__social-media-icon" src="./header-footer/facebook.png" alt="facebook">
+                <img id="nav__social-media-icon" src="./header-footer/twitter.png" alt="twitter">
+                <img id="nav__social-media-icon" src="./header-footer/youtube.png" alt="youtube">
+                <img id="nav__social-media-icon" src="./header-footer/instagram.png" alt="instagram">
+            </section>
+        </nav>
+    </header>
+    <main>
+    <section class="banner">
+       <div>
+           <div class="banner__video--text">
+               <p class="banner__video--title">WELCOME TO MY FIRST WEB USING HTML AND CSS</p>
+               <p>I´m going to create</p>
+               <p>a responsive and</p>
+               <p>animated web</p>
+           </div>
+   
+           <video class="banner__video" autoplay loop>
+               <source src="./fotos-video/pexels-kelly-lacy-9698456.mp4" type="video/mp4">   
+           </video>
+       </div> 
+
+    </section>
+
+    <section class="cards__container">
+        <div class="cards__title">
+            <h1>WORLD PLACES</h1>
+        </div>
+        <div class="cards">
+            <div class="card__container">
+                <div class="card__one--front">
+                    <p class="card__front--city">MOUNTAIN</p>
+                </div>
+                <div class="card__one--back">
+                    <h1 class="card__back--title">MOUNTAIN</h1>
+                    <p class="card__back--text">This is a picture of the mountain El Asnam in Algeria, taken by Billel Moula.</p>
+                </div>
+            </div>
+            <div class="card__container card__two">
+                <div class="card__two--front">
+                    <p class="card__front--city">LAKE</p>
+                </div>
+                <div class="card__two--back" >
+                    <h1 class="card__back--title">LAKE</h1>
+                    <p class="card__back--text">This is a picture of the Thuong Lam lake in Vietnam, taken by Quang Nguyen Vinh.</p>
+                </div>
+            </div>
+            <div class="card__container">
+                <div class="card__three--front">
+                    <p class="card__front--city">OCEAN</p>
+                </div>
+                <div class="card__three--back">
+                    <h1 class="card__back--title">OCEAN</h1>
+                    <p class="card__back--text">Sunset in the most beatiful landscape. Perfect shot in the right moment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing__container">
+        <div class="pricing__info">
+          <h1 class="pricing__info-title">Find a plan that's right for you.</h1>
+          <sub class="pricing__info--subtitle">Every plan comes with a 30-day free trial.</sub>
+        </div>
+        <div class="pricing__plan">
+         <div class="pricing__plan-bronze-gold-platinum">
+            <div class="pricing__header">
+             <section>
+                <div>
+                    <h1 class="pricing__plan--name">Bronze Package</h1>
+                </div>
+             </section>
+             <hr>
+             <section>
+                <div class="dollar__price__month">
+                    <p class="dollar">$</p>
+                    <p class="price">10</p>
+                    <p class="month">Month</p>
+                </div>
+             </section>
+            <hr>
+            </div>
+            <div class="checks__container">
+             <section>
+                <div class="checks">
+                <div class="green__check">✓</div>
+                <p>Unlimited Listing</p>
+                </div>
+             </section>
+             <section>
+                <div class="checks" >
+                <div class="green__check">✓</div>
+                <p>Edit Your Listing</p>
+                </div>
+             </section>
+             <section>
+                <div class="checks">
+                <div class="green__check">✓</div>
+                <p class=>Approve Reviews</p>
+                </div>
+             </section>
+            </div>
+            <hr>
+            <section>
+                <div><button class="get__button">Get Started Now</button></div>
+            </section>
+         </div>
+         <div class="pricing__plan-bronze-gold-platinum">
+            <div class="blue__circle">
+                <p class>MOST</p>
+                <p>POPULAR</p>
+            </div>
+            <div class="pricing__header">
+             <section>
+                <div>
+                    <h1 class="pricing__plan--name">Gold Package</h1>
+                </div>
+             </section>
+             <hr>
+             <section>
+                <div class="dollar__price__month">
+                    <p class="dollar">$</p>
+                    <p class="price">19</p>
+                    <p class="month">Month</p>
+                </div>
+             </section>
+            </div>
+            <hr>
+            <div class="checks__container">  
+             <section>
+                <div class="checks">
+                <div class="green__check">✓</div>
+                <p>Unlimited Listing</p>
+                </div>
+             </section>
+             <section>
+                <div class="checks" >
+                <div class="green__check">✓</div>
+                <p>Edit Your Listing</p>
+                </div>
+             </section>
+             <section>
+                <div class="checks">
+                <div class="green__check">✓</div>
+                <p>Approve Reviews</p>
+                </div>
+             </section>
+             <section>
+                <div class="checks">
+                <div class="green__check">✓</div>
+                <p>Take Booking Online</p>
+                </div>
+             </section>
+             <section>
+                <div class="checks">
+                <div class="green__check">✓</div>
+                <p>24/7 Support Service</p>
+                </div>
+             </section>
+            </div> 
+            <hr> 
+            <section>
+                <div><button class="get__button">Get Started Now</button></div>
+            </section>
+         </div>
+         <div class="pricing__plan-bronze-gold-platinum">
+            <div class="pricing__header">
+             <section>
+                <div>
+                    <h1 class="pricing__plan--name">Platinum Package</h1>
+                </div>
+             </section>
+             <hr>
+             <section>
+                <div class="dollar__price__month">
+                    <p class="dollar">$</p>
+                    <p class="price">49</p>
+                    <p class="month">Month</p>
+                </div>
+             </section>
+            </div>
+            <hr>
+            <div class="checks__container">
+             <section>
+                <div class="checks">
+                <div class="green__check">✓</div>
+                <p>Unlimited Listing</p>
+                </div>
+             </section>
+             <section>
+                <div class="checks" >
+                <div class="green__check">✓</div>
+                <p>Edit Your Listing</p>
+                </div>
+             </section>
+             <section>
+                <div class="checks">
+                <div class="green__check">✓</div>
+                <p>Approve Reviews</p>
+                </div>
+             </section>
+            </div>
+            <hr>
+            <section>
+                <div><button class="get__button">Get Started Now</button></div>
+            </section>
+         </div>
+       </div>
+    </section>
+    </main>
+    <footer>
+        <p>My very first web using only HTML and CSS - Marco García Koch 2022</p>
+    </footer>
+</body>
+</html>
